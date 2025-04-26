@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Event Planning Service</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo">EventPro</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="calculator.html">Budget Calculator</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <h1 class="section-title animate-on-scroll">Contact Us</h1>
+            
+            <div class="contact-container">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-info-item">
+                        <i class="fa fa-map-marker"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Event Street, City, Country</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@eventpro.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form animate-on-scroll">
+                    <form id="contact-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+                        <div id="form-message" style="display: none;"></div>
+                        
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                        <label for="event">Event Type:</label>
+                        <select id="event" name="event" required>
+                            <option value="" disabled selected>Select your event type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="anniversary">Anniversary</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your event" required></textarea>
+
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EventPro | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <style>
+        /* Add some styling for form messages */
+        .error-message {
+            background-color: #ffdddd;
+            color: #d8000c;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+        .success-message {
+            background-color: #ddffdd;
+            color: #4f8a10;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+    </style>
+</body>
+</html>

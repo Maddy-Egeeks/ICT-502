@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator - Event Planning Service</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo">EventPro</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="calculator.html" class="active">Budget Calculator</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <h1 class="section-title animate-on-scroll">Estimate Your Event Cost</h1>
+            <div class="calculator-container animate-on-scroll">
+                <form id="budget-form">
+                    <div class="form-group">
+                        <label for="eventType">Event Type:</label>
+                        <select id="eventType" required>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="anniversary">Anniversary</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Number of Guests:</label>
+                        <input type="number" id="guests" min="1" placeholder="Enter number of guests" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Venue Type:</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="indoor" name="venue" value="indoor" checked>
+                                <label for="indoor">Indoor</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="outdoor" name="venue" value="outdoor">
+                                <label for="outdoor">Outdoor</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="calculate-btn">Calculate Estimate</button>
+                </form>
+
+                <div id="result" class="estimate-result" style="display:none;">
+                    <h3>Your Event Estimate</h3>
+                    <div class="estimate-breakdown">
+                        <!-- Results will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EventPro | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
